@@ -1,2 +1,27 @@
-<h1>Top#index</h1>
-<p>Find me in app/views/top/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Match App</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="loginPage">
+          <div class="container">
+            <div class="loginPage_contents">
+              <h1 class="h4 loginPage_contents_title">出会うかどうかは、日頃の行い次第デス</h1>
+              <%= link_to "メールアドレスでログインする", new_user_session_path, class: "btn loginPage_contents_btn" %>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
