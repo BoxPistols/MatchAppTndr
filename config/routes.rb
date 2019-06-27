@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   # get 'top/index'
   root "top#index"
 
+  resources :users, only: %i(show)
 
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
