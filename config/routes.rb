@@ -9,4 +9,7 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
+  # indexを追加する
+  resources :users, only: %i(index show)
+
 end
